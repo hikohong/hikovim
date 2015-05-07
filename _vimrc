@@ -411,7 +411,6 @@ map <silent> <leader>ic :call ToggleIgnoreCase()<CR>
 "      call GoToWindow(a:current_winnr) "return to the original window
 "    endif
 "
-"    "試著顯示當前光棒處匹配的標籤
 "    try
 "       "exe "ptag " . w
 "       exe "ptag " w
