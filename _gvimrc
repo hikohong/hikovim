@@ -89,7 +89,7 @@ set hidden
 "i: insert
 "n: normal
 "set mouse-=n
-set mouse=n
+set mouse=a
 
 
 "setting up the line folding fucntion
