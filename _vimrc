@@ -83,8 +83,13 @@ set number
 set nowrap
 set incsearch
 set hidden
+
+"set mouse=a/i/n
+"a: all
+"i: insert
+"n: normal
 "set mouse-=n
-set mouse=i
+set mouse=n
 
 "setting up the line folding fucntion
 "set foldenable
