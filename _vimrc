@@ -416,6 +416,7 @@ map <silent> <leader>ic :call ToggleIgnoreCase()<CR>
 "      call GoToWindow(a:current_winnr) "return to the original window
 "    endif
 "
+"    try to show light bar in current position
 "    try
 "       "exe "ptag " . w
 "       exe "ptag " w
