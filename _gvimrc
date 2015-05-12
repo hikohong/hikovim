@@ -60,6 +60,7 @@ filetype off                 " required!
 "=============================
 syntax enable
 
+set backspace=indent,eol,start "this can be using back key normally in which the terminal didn't have it
 
 "color scheme theme
 "colo evening
