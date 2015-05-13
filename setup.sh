@@ -12,8 +12,8 @@ function print_usage()
 	echo "   ./setup.sh"
 	echo "   ./setup.sh --backup"
 	echo "-----------------------------------------------------------------------------------"
-	echo "[option] --install -i --install_and_backup --help -h"
-	echo "  option default is --install_and_backup"
+	echo "[option] --install -i --install_without_backup --help -h"
+	echo "  option default is --install (do backup)"
 	echo "==================================================================================="
 }
 
@@ -64,14 +64,15 @@ function backup_exist_files()
 
 # main procedure
 case $1 in
---install_and_backup)
-	backup_exist_files
+--install_without_backup)
 	insall_to_home_system
 	;;
 --install)
+	backup_exist_files
 	insall_to_home_system
 	;;
 -i)
+	backup_exist_files
 	insall_to_home_system
 	;;
 -h)
@@ -81,7 +82,7 @@ case $1 in
 	print_usage
 	;;
 *)
-	insall_to_home_system
+	print_usage
 	;;
 esac
 
