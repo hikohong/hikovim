@@ -114,6 +114,10 @@ set shiftwidth=4
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$\| \+\ze\t\| [^\t]\zs\t\+/
 
+" show tab in file
+"set list
+"set listchars=tab:\|\ 
+
 "" functio block
 ""checking the current operation environmens
 "function! IsGvim()
