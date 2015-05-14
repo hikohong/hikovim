@@ -13,7 +13,8 @@ function print_usage()
 	echo "   ./setup.sh --backup"
 	echo "-----------------------------------------------------------------------------------"
 	echo "[option] --install -i --install_without_backup --help -h"
-	echo "  option default is --install (do backup)"
+	echo "  option default is -help page"
+	echo "  -i --install has backup process"
 	echo "==================================================================================="
 }
 
