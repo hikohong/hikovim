@@ -24,19 +24,23 @@ function insall_to_home_system()
 	then
 		rm -rf ~/.vim
 	fi
+
 	mkdir ~/.vim
 	cp -r ./colors ~/.vim/
 	cp -r ./doc ~/.vim/
 	cp -r ./plugin ~/.vim/
+
 	if [ -f ~/.vimrc ];
 	then
 		rm -f ~/.vimrc
 	fi
+
 	cp _vimrc ~/.vimrc
 	if [ -f ~/.gvimrc ];
 	then
 		rm -f ~/.gvimrc
 	fi
+
 	cp _gvimrc ~/.gvimrc
 }
 
