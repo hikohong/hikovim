@@ -100,7 +100,7 @@ if version >= 700 " Vim 7.x specific colors
   hi Pmenu          guifg=#f6f3e8     guibg=#444444     gui=NONE      ctermfg=white       ctermbg=darkgray    cterm=NONE
   hi PmenuSel       guifg=#000000     guibg=#cae682     gui=NONE      ctermfg=black       ctermbg=lightyellow cterm=NONE
   "hi IncSearch      guifg=NONE        guibg=NONE        gui=underline ctermfg=NONE        ctermbg=NONE        cterm=underline
-  hi IncSearch      guifg=green       guibg=darkgray    gui=NONE      ctermfg=green       ctermbg=darkgray    cterm=NONE
+  hi IncSearch      guifg=green       guibg=darkgray    gui=NONE      ctermfg=green       ctermbg=darkred    cterm=NONE
   "hi Search         guifg=NONE        guibg=NONE        gui=underline ctermfg=NONE        ctermbg=NONE        cterm=underline
   hi Search         guifg=green       guibg=darkgray    gui=NONE      ctermfg=green       ctermbg=darkgray    cterm=NONE
 endif
