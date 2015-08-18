@@ -54,6 +54,23 @@ filetype off                 " required!
 " others than vundle
 "======================
 
+"======================
+" Checking the OS
+"======================
+function! IsGvim()
+    if has("gui_running")
+        return 1
+    else
+        return 0
+    endif
+endfunction
+function! IsWindows()
+    if has("win32")
+        return 1
+    else
+        return 0
+    endif
+endfunction
 
 "=============================
 " the color printing relative
@@ -84,6 +101,11 @@ set number
 set nowrap
 set incsearch
 set hidden
+if IsWindows()
+    set guifont=Fixedsys:h11 "for windows
+    "set guifont=Monaco:h10 "if Monaco font installed
+endif
+
 
 "set mouse=a/i/n
 "a: all
