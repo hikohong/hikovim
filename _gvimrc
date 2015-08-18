@@ -102,8 +102,8 @@ set nowrap
 set incsearch
 set hidden
 if IsWindows()
-    set guifont=Fixedsys:h11 "for windows
-    "set guifont=Monaco:h10 "if Monaco font installed
+    "set guifont=Fixedsys:h11 "for windows
+    set guifont=Monaco:h10 "if Monaco font installed
 endif
 
 "set mouse=a/i/n
