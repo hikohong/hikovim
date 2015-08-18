@@ -14,3 +14,4 @@ hope you enjoy
 
 For windows users, please install the following execution files which is needed by individual vim shells
  1. cgats: http://ctags.sourceforge.net/
+ 2. monaco font: https://github.com/todylu/monaco.ttf
