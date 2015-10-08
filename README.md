@@ -6,7 +6,7 @@ hope you enjoy
 
 # Important Modifications
 
-1. taglist has some error when chenge the tabs
+1. taglist has some errors when chenge the tabs
 2. filter.vim will cause the direction/arrow keys fail in normal mode
 3. update setup.sh for installation more easily, use./setup.sh for usage intro
 
