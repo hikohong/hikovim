@@ -9,11 +9,11 @@ function print_usage()
 	echo " Author Hiko Hong"
 	echo "   ./setup.sh [option]"
 	echo "   Example:"
-	echo "   ./setup.sh"
+	echo "   ./setup.sh --install"
 	echo "   ./setup.sh --backup"
 	echo "-----------------------------------------------------------------------------------"
 	echo "[option] --install -i --install_without_backup --help -h"
-	echo "  option default is -help page"
+	echo "  option default is as --help"
 	echo "  -i --install has backup process"
 	echo "==================================================================================="
 }
@@ -83,7 +83,7 @@ case $1 in
 -h)
 	print_usage
 	;;
--help)
+--help)
 	print_usage
 	;;
 *)
