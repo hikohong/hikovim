@@ -26,9 +26,13 @@ function insall_to_home_system()
 	fi
 
 	mkdir ~/.vim
+	cp -r ./autoload ~/.vim/
 	cp -r ./colors ~/.vim/
 	cp -r ./doc ~/.vim/
+	cp -r ./lib ~/.vim/
+	cp -r ./nerdtree_plugin ~/.vim/
 	cp -r ./plugin ~/.vim/
+	cp -r ./syntax ~/.vim/
 
 	if [ -f ~/.vimrc ];
 	then
