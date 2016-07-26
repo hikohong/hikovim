@@ -105,6 +105,10 @@ if IsWindows()
     "set guifont=Fixedsys:h11 "for windows
     set guifont=Monaco:h10 "if Monaco font installed
 endif
+if IsGvim()
+    "set guifont=Fixedsys:h11 "for windows
+    set guifont=Monaco:h10 "if Monaco font installed
+endif
 
 "set mouse=a/i/n
 "a: all
