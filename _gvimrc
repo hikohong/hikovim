@@ -309,6 +309,7 @@ nmap <C-h> :%s/<C-R>=expand("<cword>")<CR>/
 let Tlist_Use_Right_Window = 1
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Show_One_File=1
+let Tlist_WinWidth = 60
 set updatetime=500
 
 "switch in between of current window and Taglist window
