@@ -77,6 +77,9 @@ endfunction
 "=============================
 syntax enable
 
+set encoding=utf-8 "set this encoding for macOS or NERDTree will fail to open folder
+"set fileencoding=utf-8
+
 set backspace=indent,eol,start "this can be using back key normally in which the terminal didn't have it
 
 "color scheme theme
