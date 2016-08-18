@@ -113,6 +113,7 @@ if IsGvim()
     set guifont=Monaco:h10 "if Monaco font installed
 endif
 
+
 "set mouse=a/i/n
 "a: all
 "i: insert
@@ -148,6 +149,21 @@ match ExtraWhitespace /\s\+$\| \+\ze\t\| [^\t]\zs\t\+/
 "set listchars=tab:\|\ 
 
 "" functio block
+""checking the current operation environmens
+"function! IsGvim()
+"    if has("gui_running")
+"        return 1
+"    else
+"        return 0
+"    endif
+"endfunction
+"function! IsWindows()
+"    if has("win32")
+"        return 1
+"    else
+"        return 0
+"    endif
+"endfunction
 "
 "filetype plugin on
 "if IsWindows()
@@ -311,6 +327,7 @@ let Tlist_Exit_OnlyWindow = 1
 let Tlist_Show_One_File=1
 let Tlist_WinWidth = 60
 set updatetime=500
+map <silent> <leader>tb :TagbarToggle<CR>
 
 "switch in between of current window and Taglist window
 "map <F4> :call JumpToTagList()<CR>
@@ -381,20 +398,20 @@ endif
 "highlight searching
 "http://vim.wikia.com/wiki/Highlight_all_search_pattern_matches
 "=======================
-function! ToggleHlsearch()
-    let pattern="\\<".expand("<cword>")."\\>"
-    if pattern==@/
-        if &hls
-            set nohls
-        else
-            set hls
-        endif
-    else
-        let @/=pattern
-        set hls
-    endif
-endfunction
-map <silent>  <F8>  :call ToggleHlsearch()<CR>
+"function! ToggleHlsearch()
+"    let pattern="\\<".expand("<cword>")."\\>"
+"    if pattern==@/
+"        if &hls
+"            set nohls
+"        else
+"            set hls
+"        endif
+"    else
+"        let @/=pattern
+"        set hls
+"    endif
+"endfunction
+"map <silent>  <F8>  :call ToggleHlsearch()<CR>
 
 function! ToggleIgnoreCase()
     if &ic

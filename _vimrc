@@ -326,6 +326,7 @@ let Tlist_Exit_OnlyWindow = 1
 let Tlist_Show_One_File=1
 let Tlist_WinWidth = 60
 set updatetime=500
+map <silent> <leader>tb :TagbarToggle<CR>
 
 "switch in between of current window and Taglist window
 "map <F4> :call JumpToTagList()<CR>
@@ -396,20 +397,20 @@ endif
 "highlight searching
 "http://vim.wikia.com/wiki/Highlight_all_search_pattern_matches
 "=======================
-function! ToggleHlsearch()
-    let pattern="\\<".expand("<cword>")."\\>"
-    if pattern==@/
-        if &hls
-            set nohls
-        else
-            set hls
-        endif
-    else
-        let @/=pattern
-        set hls
-    endif
-endfunction
-map <silent>  <F8>  :call ToggleHlsearch()<CR>
+"function! ToggleHlsearch()
+"    let pattern="\\<".expand("<cword>")."\\>"
+"    if pattern==@/
+"        if &hls
+"            set nohls
+"        else
+"            set hls
+"        endif
+"    else
+"        let @/=pattern
+"        set hls
+"    endif
+"endfunction
+"map <silent>  <F8>  :call ToggleHlsearch()<CR>
 
 function! ToggleIgnoreCase()
     if &ic
