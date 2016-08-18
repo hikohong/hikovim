@@ -326,7 +326,13 @@ let Tlist_Exit_OnlyWindow = 1
 let Tlist_Show_One_File=1
 let Tlist_WinWidth = 60
 set updatetime=500
+
+"=================
+"TagBar
+"================
 map <silent> <leader>tb :TagbarToggle<CR>
+let g:tagbar_sort=0 "sorting by sequence, but name
+
 
 "switch in between of current window and Taglist window
 "map <F4> :call JumpToTagList()<CR>
