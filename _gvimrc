@@ -180,17 +180,17 @@ match ExtraWhitespace /\s\+$\| \+\ze\t\| [^\t]\zs\t\+/
 let mapleader=","
 
 
-"cscope setup
-if has("cscope")
-     set csprg=/usr/bin/cscope
-     set csto=1
-     set cst
-     set nocsverb
-    if filereadable("cscope.out")
-         cs add cscope.out
-     endif
-     set csverb
-endif
+""cscope setup
+"if has("cscope")
+"     set csprg=/usr/bin/cscope
+"     set csto=1
+"     set cst
+"     set nocsverb
+"    if filereadable("cscope.out")
+"         cs add cscope.out
+"     endif
+"     set csverb
+"endif
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -366,7 +366,9 @@ endif
 
 "cscope setting
 if has("cscope")
-    "set csprg=/usr/local/bin/cscope
+    "set csprg=/usr/bin/cscope
+	"mac is using /usr/local/bin/cscope in brew install
+    set csprg=/usr/local/bin/cscope
     set csto=0
     set cst
     set nocsverb
