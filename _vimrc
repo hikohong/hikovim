@@ -182,6 +182,7 @@ let mapleader=","
 "cscope setup
 if has("cscope")
      set csprg=/usr/bin/cscope
+     "set csprg=/usr/local/bin/cscope <- in macOS later version of EL Capitan's the brew is locate in here
      set csto=1
      set cst
      set nocsverb
