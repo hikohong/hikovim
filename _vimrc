@@ -175,23 +175,8 @@ match ExtraWhitespace /\s\+$\| \+\ze\t\| [^\t]\zs\t\+/
 "set backupext=.bak
 
 
-
+"set the leading keyword
 let mapleader=","
-
-
-"cscope setup
-if has("cscope")
-     set csprg=/usr/bin/cscope
-     "set csprg=/usr/local/bin/cscope <- in macOS later version of EL Capitan's the brew is locate in here
-     set csto=1
-     set cst
-     set nocsverb
-    if filereadable("cscope.out")
-         cs add cscope.out
-     endif
-     set csverb
-endif
-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "the sessionoption can deside which session can be saved
@@ -366,7 +351,13 @@ endif
 
 "cscope setting
 if has("cscope")
-    "set csprg=/usr/local/bin/cscope
+	if has("unix")
+		if has ("mac")
+			set csprg=/usr/local/bin/cscope
+		else
+			set csprg=/usr/bin/cscope
+		endif
+	endif
     set csto=0
     set cst
     set nocsverb
