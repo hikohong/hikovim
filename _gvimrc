@@ -356,10 +356,8 @@ if has("cscope")
 		let s:uname = system("uname")
 		if s:uname == "Darwin\n"
 			set csprg=/usr/local/bin/cscope
-			echo "gogogo"
 		else
 			set csprg=/usr/bin/cscope
-			echo "nonono"
 		endif
 	endif
     set csto=0
