@@ -95,6 +95,7 @@ highlight StatusLine cterm=bold ctermfg=darkred ctermbg=white guifg=darkblue gui
 set background=dark 
 set hlsearch
 set tabstop=4
+set expandtab
 syntax on
 "set nocompatible
 
@@ -227,9 +228,9 @@ function! CodingStyleInit()
     "turn on the c language auto indent
     setl cindent
     "turn on/off the tab expandtab/noexpandtab (et/noet)
-    setl expandtab
+    "setl expandtab
     "4 stop position for the tab key
-    setl tabstop=4
+    "setl tabstop=4
 endfunction
 autocmd! filetype c,cpp call CodingStyleInit()
 
