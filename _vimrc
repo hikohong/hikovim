@@ -96,6 +96,9 @@ set background=dark
 set hlsearch
 set tabstop=4
 set expandtab
+"set noexpandtab //inverse of expandtab
+"the auto indent width
+set shiftwidth=4
 syntax on
 "set nocompatible
 
@@ -136,8 +139,6 @@ set showmatch
 "the auto indent function like folding
 set autoindent
 
-"the auto indent width
-set shiftwidth=4
 
 " Show trailing whitespace and spaces before a tab
 " and show tabs that are not at the start of a line:
