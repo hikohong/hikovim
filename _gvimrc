@@ -102,6 +102,10 @@ set shiftwidth=4
 syntax on
 "set nocompatible
 
+"cursor
+set cursorline
+set cursorcolumn
+
 set ignorecase
 set history=400
 set number
