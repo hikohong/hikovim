@@ -104,7 +104,7 @@ syntax on
 
 "cursor
 set cursorline
-set cursorcolumn
+"set cursorcolumn
 
 set ignorecase
 set history=400
