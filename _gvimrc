@@ -144,7 +144,10 @@ set showmatch
 set autoindent
 
 "set the default vim-airline-themes color"
-AirlineTheme cool
+let g:airline_theme = 'cool'
+let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#left_sep = ' '
+"let g:airline#extensions#tabline#left_alt_sep = '>'
 
 " Show trailing whitespace and spaces before a tab
 " and show tabs that are not at the start of a line:
