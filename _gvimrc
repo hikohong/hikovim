@@ -129,7 +129,6 @@ endif
 "set mouse-=n
 set mouse=a
 
-
 "setting up the line folding fucntion
 "set foldenable
 set nofoldenable
@@ -144,6 +143,8 @@ set showmatch
 "the auto indent function like folding
 set autoindent
 
+"set the default vim-airline-themes color"
+AirlineTheme cool
 
 " Show trailing whitespace and spaces before a tab
 " and show tabs that are not at the start of a line:
