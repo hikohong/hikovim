@@ -95,8 +95,8 @@ highlight StatusLine cterm=bold ctermfg=darkred ctermbg=white guifg=darkblue gui
 set background=dark 
 set hlsearch
 set tabstop=4
-"set expandtab
-set noexpandtab "inverse of expandtab
+set expandtab
+"set noexpandtab "inverse of expandtab
 "the auto indent width
 set shiftwidth=4
 syntax on
