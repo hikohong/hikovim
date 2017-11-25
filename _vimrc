@@ -92,7 +92,7 @@ colorscheme hiko_color
 highlight StatusLine cterm=bold ctermfg=darkred ctermbg=white guifg=darkblue guibg=olivedrab
 
 "has been set in back of the script
-set background=dark 
+set background=dark
 set hlsearch
 set tabstop=4
 set expandtab
@@ -156,7 +156,7 @@ match ExtraWhitespace /\s\+$\| \+\ze\t\| [^\t]\zs\t\+/
 
 " show tab in file
 "set list
-"set listchars=tab:\|\ 
+"set listchars=tab:\|\
 
 "" functio block
 ""checking the current operation environmens
