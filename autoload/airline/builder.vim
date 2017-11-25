@@ -49,7 +49,9 @@ function! s:prototype.build() dict
     let contents = section[1]
     let pgroup = prev_group
     let prev_group = s:get_prev_group(self._sections, i)
-    if group ==# 'airline_c' && !self._context.active && has_key(self._context, 'bufnr')
+    if group ==# 'airline_c' && &buftype ==# 'terminal' && self._context.active
+      let group = 'airline_term'
+    elseif group ==# 'airline_c' && !self._context.active && has_key(self._context, 'bufnr')
       let group = 'airline_c'. self._context.bufnr
     elseif prev_group ==# 'airline_c' && !self._context.active && has_key(self._context, 'bufnr')
       let prev_group = 'airline_c'. self._context.bufnr
@@ -159,6 +161,11 @@ function! s:section_is_empty(self, content)
 
   " only check, if airline#skip_empty_sections == 1
   if get(g:, 'airline_skip_empty_sections', 0) == 0
+    return 0
+  endif
+
+  " only check, if airline#skip_empty_sections == 1
+  if get(w:, 'airline_skip_empty_sections', -1) == 0
     return 0
   endif
   " assume accents sections to be never empty
