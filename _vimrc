@@ -144,27 +144,28 @@ set showmatch
 set autoindent
 
 "set the default vim-airline-themes color"
+"see doc/airline.txt
 let g:airline_theme = 'cool'
 let g:airline#extensions#tabline#enabled = 1
 "let g:airline#extensions#tabline#enabled = 0
 let g:airline#extensions#tabline#show_splits = 1
 "let g:airline#extensions#tabline#left_sep = ' '
 "let g:airline#extensions#tabline#left_sep = '▶'
-"let g:airline_left_sep='>'
-let g:airline_left_sep = '▶'
-"let g:airline_left_sep = '🐇'
-"let g:airline_left_alt_sep = '>'
-"let g:airline_left_alt_sep = '▶'
-"let g:airline_left_sep = '◢''
-"let g:airline_left_sep = '▊'
-"let g:airline_left_sep = ''
-"let g:airline_right_sep='<'
-let g:airline_right_sep = '◀'
-"let g:airline_right_alt_sep = '<'
-"let g:airline_right_sep = '◣'
-"let g:airline_left_alt_sep = ''
-"let g:airline#extensions#tabline#left_alt_sep = '>'
-let g:airline_symbols.branch = '⎇'
+if IsGvim()
+    let g:airline_left_sep='>'
+    let g:airline_right_sep='<'
+else
+    let g:airline#extensions#tabline#left_sep = ''
+    let g:airline_left_sep = ''
+    let g:airline_left_alt_sep = ''
+    let g:airline_right_sep = ''
+    let g:airline_right_alt_sep = ''
+    "let g:airline_symbols.branch = ''
+    "let g:airline_symbols.readonly = ''
+    "let g:airline_symbols.linenr = '☰'
+    "let g:airline_symbols.maxlinenr = ''
+endif
+
 
 " Show trailing whitespace and spaces before a tab
 " and show tabs that are not at the start of a line:
