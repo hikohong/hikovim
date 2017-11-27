@@ -27,7 +27,7 @@ function insall_to_home_system()
 
 	mkdir ~/.vim
 	cp -r ./autoload ~/.vim/
-	cp -r ./bitmaps ~/.vim/
+	#cp -r ./bitmaps ~/.vim/
 	cp -r ./colors ~/.vim/
 	cp -r ./doc ~/.vim/
 	cp -r ./lib ~/.vim/
