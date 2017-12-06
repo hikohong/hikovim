@@ -173,8 +173,8 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$\| \+\ze\t\| [^\t]\zs\t\+/
 
 " show tab in file
-"set list
-"set listchars=tab:\|\
+set listchars=eol:↵,tab:»·,trail:╳,extends:»,precedes:«
+set list
 
 "" functio block
 ""checking the current operation environmens
